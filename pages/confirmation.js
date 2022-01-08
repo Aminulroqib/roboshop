@@ -108,9 +108,9 @@ function Confirmation(props) {
                       </TableHead>
                       <TableBody>
                         {order.order.line_items.map((cartItem) => (
-                          <TableRow key={cartItem.name}>
+                          <TableRow key={cartItem.product_name}>
                             <TableCell component="th" scope="row">
-                              {cartItem.name}
+                              {cartItem.product_name}
                             </TableCell>
                             <TableCell align="right">
                               {cartItem.quantity}
